@@ -1,0 +1,62 @@
+{
+  "name": "charizard",
+  "version": "0.2.9",
+  "description": "_DESCRIPTION_",
+  "author": {
+    "name": "Ruben James",
+    "email": "delacruzrubenjames@gmail.com",
+    "url": "https://github.com/purefml"
+  },
+  "private": true,
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "mui",
+    "material",
+    "material ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karpolan/nextjs-mui-starter-ts.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "format": "prettier ./ --write",
+    "lint": "next lint",
+    "start": "next start",
+    "test": "jest --watch",
+    "test:ci": "jest --ci",
+    "type": "tsc"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@mui/material-nextjs": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/jest": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "jest": "latest",
+    "jest-environment-jsdom": "latest",
+    "next-router-mock": "latest",
+    "prettier": "latest",
+    "ts-node": "latest",
+    "typescript": "^5"
+  }
+}

@@ -70,6 +70,11 @@ npm run build
 npm start
 ```
 
+## Functions 
+• As the form is filled out, the preview should be automatically updated
+• The Create button should function to call the Create Referral API endpoint
+• ADD, VIEW and DELETE Referral (Update Not Included: TODO) 
+
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 

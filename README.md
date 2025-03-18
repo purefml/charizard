@@ -1,38 +1,75 @@
-# Starter project for Next.js with App Router + Material UI using TypeScript
+# Charizard
 
-Mix of [Create Next App](https://nextjs.org/docs/pages/api-reference/create-next-app) and [MUI](https://mui.com) with set of reusable components and utilities to build professional NextJS application faster.
+This repository contains the source code for Charizard, a web application built with Next.js. Below are the setup instructions, including how to configure the environment variables.
 
-## How to use
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Running the Application](#running-the-application)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-1. Clone or download the repo
-2. Copy `.env.sample` file into `.env` file
-4. Check and resolve all 
-5. Add your own code
+## Getting Started
+To get started with this project, clone the repository:
 
-## Available Scripts
+```sh
+git clone https://github.com/purefml/charizard.git
+cd charizard
+```
 
-In the project directory, you can run:
+## Installation
+1. Install dependencies:
+   ```sh
+   npm install
+   ```
+2. Copy the `.env.example` file to `.env.local`:
+   ```sh
+   cp .env.example .env.local
+   ```
+3. Configure your environment variables as described below.
 
-### `npm run dev` or `yarn dev`
+## Environment Variables
+This project uses environment variables for configuration. You need to create a `.env.local` file in the root directory and set the following variables:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+# Environment similar to NODE_ENV.
+# Set to "production" for a fully functional application.
+NEXT_PUBLIC_ENV=development
+# NEXT_PUBLIC_ENV=preview
+# NEXT_PUBLIC_ENV=production
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Enables additional debug features.
+# Set to "true" for more debugging information (not recommended in production).
+NEXT_PUBLIC_DEBUG=false
 
-### `npm run lint` or `yarn lint`
+# Public URL of the application/website.
+NEXT_PUBLIC_PUBLIC_URL=http://localhost:3000
 
-Checks the code for errors and missing things
+# API/Backend base URL.
+# Use the local API when running both frontend and backend locally.
+# NEXT_PUBLIC_API_URL=http://localhost:9000
+NEXT_PUBLIC_API_URL=https://charmander-cvi0.onrender.com
+```
 
-### `npm run format` or `yarn format`
+## Running the Application
+Once the environment variables are set up, start the development server:
 
-Formats the code according to `./prettierrc.js` config
+```sh
+npm run dev
+```
 
-### `npm test` or `yarn test`
+This will start the application at `http://localhost:3000`.
 
-Launches the test runner in the interactive watch mode.<br />
+## Deployment
+For deploying the application, set `NEXT_PUBLIC_ENV` to `production` and ensure all environment variables are correctly configured.
 
-### `npm run build` or `yarn build`
+```sh
+npm run build
+npm start
+```
 
-Builds the app for production or local development to the `.next` folder.<br />
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
